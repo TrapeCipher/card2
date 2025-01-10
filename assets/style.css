@@ -206,7 +206,7 @@ hr {
     .e-card {
         scale: 0.9;
         width: 90%; /* Reduce card width for smaller screens */
-        height: auto; /* Let the height adjust based on content */
+        height: 200px; /* Let the height adjust based on content */
         margin: 20px auto; /* Adjust margin */
         min-height: 600px; /* Ensure some minimum height */
     }
@@ -232,5 +232,48 @@ hr {
     .quote {
         scale: 1.05;
         padding: 5px; /* Add padding for better spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Small mobile screens */
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    .e-card {
+        width: 95%;
+        margin: 10px auto;
+        min-height: 400px;
+    }
+
+    .quote {
+        scale: 1.08;
+        padding: 5px; /* Add padding for better spacing */
+    }
+
+    .quote h2 {
+        font-size: 13px;
+    }
+
+    .infotop {
+        font-size: 20px; /* Smaller font for mobile */
+    }
+
+    .typewriter {
+        font-size: 16px;
+        width: 18ch;
+    }
+
+    .icon {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin: 0;
+        padding: 0;
     }
 }
